@@ -154,7 +154,7 @@ if st.session_state['btn_chat']:
             source = selected_data["source"]
             seasonal_adjustment = selected_data["seasonal_adjustment"]
             csv_file = selected_data["csv_file"]
-            csv_url = os.path.join(database_dir, value["csv_file"])
+            csv_url = os.path.join(database_dir, csv_file)
 
             df = fetch_data(csv_url)
 
