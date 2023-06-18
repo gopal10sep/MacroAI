@@ -1,9 +1,9 @@
 streamlit
 json
 pandas
-streamlit_chat
+streamlit-chat
 pathlib
-llama_index
+llama-index
 openai
 langchain
 fuzzywuzzy
