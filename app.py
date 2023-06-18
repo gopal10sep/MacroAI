@@ -23,8 +23,8 @@ from fuzzywuzzy import fuzz
 import dotenv
 dotenv.load_dotenv('.env')
 
-# Specify the path to the JSON file
-file_path = "utils/data_map.json"
+file_path = os.path.join("utils", "data_map.json")
+database_dir = os.path.join(os.getcwd(), "database")
 with open(file_path, "r") as file:
     json_data = json.load(file)
 
@@ -35,7 +35,7 @@ langchain_documents = [d.to_langchain_format() for d in documents]
 llm = OpenAI(temperature=0.9)
 qa_chain = load_qa_chain(llm)
 
-database_dir = os.getcwd()+"\\database\\"
+
 
 @st.cache_data
 def fetch_data(url):
@@ -111,7 +111,7 @@ if st.session_state['btn_query']:
         for series_name in relevant_options:
             for key, value in json_data.items():
                 if value["series_name"] == series_name:
-                    csv_url = database_dir + value["csv_file"]
+                    csv_url = os.path.join(database_dir, value["csv_file"])
                     df = fetch_data(csv_url)
                     st.line_chart(data=df, use_container_width=True)
                     df.index = df.index.astype(str)
@@ -154,7 +154,7 @@ if st.session_state['btn_chat']:
             source = selected_data["source"]
             seasonal_adjustment = selected_data["seasonal_adjustment"]
             csv_file = selected_data["csv_file"]
-            csv_url = database_dir + csv_file
+            csv_url = os.path.join(database_dir, value["csv_file"])
 
             df = fetch_data(csv_url)
 
