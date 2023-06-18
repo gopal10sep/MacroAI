@@ -1,0 +1,10 @@
+streamlit
+json
+pandas
+streamlit_chat
+pathlib
+llama_index
+openai
+langchain
+fuzzywuzzy
+python-dotenv
