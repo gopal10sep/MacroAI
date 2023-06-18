@@ -11,7 +11,7 @@ from llama_index import download_loader
 import openai
 
 openai.api_key = st.secrets['OPENAI_API_KEY']
-os.getenv('OPENAI_API_KEY') = st.secrets['OPENAI_API_KEY']
+os.environ['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY']
 
 from langchain.llms import OpenAI
 from langchain.chains.question_answering import load_qa_chain
