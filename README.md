@@ -46,3 +46,6 @@ To build MacroAI, I employed a combination of cutting-edge AI technologies and r
 Try it out
 
 gopal10sep-macroai-app-hfs79y.streamlit.app
+
+Youtube Demo:
+https://youtu.be/_k8R7Cc8-bQ
