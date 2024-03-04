@@ -1,0 +1,2 @@
+bls_key="9d5c4ed6e2b344afbb6d9eaf84d2b30f"
+bls_key2="813c81cc67284caeb049b3da33e3206d"

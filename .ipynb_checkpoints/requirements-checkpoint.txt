@@ -1,0 +1,11 @@
+dataclasses-json==0.5.8
+jsonpointer==2.1
+pandas
+streamlit==1.23.1
+streamlit-chat==0.0.2.2
+pathlib
+llama-index==0.6.27
+openai==0.27.8
+langchain==0.0.202
+fuzzywuzzy==0.18.0
+python-dotenv==1.0.0

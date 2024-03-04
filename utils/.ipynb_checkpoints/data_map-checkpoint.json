@@ -1,0 +1,38 @@
+{
+
+    "umich_consumer_sentiment": {
+      "series_name": "U.Mich Consumer Sentiment",
+      "published_by": "University of Michigan",
+      "units": "Index",
+      "demography": "General population",
+      "frequency": "Monthly",
+      "geography": "United States",
+      "source": "Survey data",
+      "seasonal_adjustment": false,
+      "csv_file": "umich_cons_senti.csv"
+    },
+    "umich_inflation_expectations": {
+      "series_name": "U.Mich Inflation Expectations",
+      "published_by": "University of Michigan",
+      "units": "% year-on-year",
+      "demography": "General population",
+      "frequency": "Monthly",
+      "geography": "United States",
+      "source": "Survey data",
+      "seasonal_adjustment": false,
+      "csv_file": "umich_infl_expec.csv"
+    },
+    "umich_curr_condn_cons_expectations": {
+      "series_name": "U.Mich Current Economic Conditions and Consumer Expectations",
+      "published_by": "University of Michigan",
+      "units": "Index",
+      "demography": "General population",
+      "frequency": "Monthly",
+      "geography": "United States",
+      "source": "Survey data",
+      "seasonal_adjustment": false,
+      "csv_file": "umich_cond_expec.csv"
+    }
+
+  }
+    

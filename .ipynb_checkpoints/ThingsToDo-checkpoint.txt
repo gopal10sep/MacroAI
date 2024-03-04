@@ -1,0 +1,35 @@
+Cal Hacks
+
+AllStuffData - EconAnalyst
+
+Goal: Prepare a webapp using OpenAI's GPT-4 API called EconAnalyst. Here, I am using traditional economic data in a SQL table. I am reading annual economic calendar for US. I am utilising GPT's analytical ability to assess what releases happened in the recent week. I will also check if there are any important speeches by any Fed official/Fed Reserve Bank. I will write commentary on recent releases based on the updated data. I will also write a commentary for next weeks' data releases based on news. News can be captured by Google/Bing API. In the end, I prepare a report which will have three sections - Summary, Data releases- Past week, Data releases- Upcoming week.
+
+CheckList:
+
+Step 1
+- Initialise GPT-4 API. Check if it is working fine.
+- Make a folder containing important pickle files - All Economic Data.
+- Scrape one of the economic data point - save as pickle file. 
+- Search for the best way to query time series using GPT.
+- Test Langchain/LllamaIndex for the same.
+- Let APT answer some question regarding the time series.
+- Let GPT create some charts for the time series. Test JS version of the chart as well.
+- Render the chart in html file.
+
+Step 2
+- Increase number of economic data saved in the Database folder.
+- Write a dictionary mapping the information in the pickles with parameters.
+- Test GPT to spit out relevant tables on querying.
+- Allow GPT to write summary utilising all the pandas series.
+- Make GPT to create charts utilising all the series.
+
+Project hierarchy:
+
+CalHacks/
+├── Notebooks/
+│   ├── playground.ipynb
+│   └── ...
+├── utils/
+│   └── ...
+├── .env
+└── ThingsToDo.txt
